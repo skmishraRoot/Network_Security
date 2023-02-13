@@ -52,7 +52,7 @@ We have some important argument to run snort for now and about other arguments y
 
 `-l` to log directory
 
-Let run our snort now.
+Run this command to activate snort.
 	
 	sudo snort -A full -l /var/log/snort -i {your network interface name} -q -c /etc/snort/snort.conf
 If this command run without any error then you have your snort working as an IDS on the specific network range.
