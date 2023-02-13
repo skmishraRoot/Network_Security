@@ -1,13 +1,4 @@
 
-###### Topics We will cover in this documentation
-* Intrusion detection systems
-* Introduction to snort
-* How snort works
-* Snort network placement
-* Installing & Configure snort
-* Snort configuration file
-* Writing custom Snort Rules
-
 So If you are learning about snort I can assume you have basic info about networking and network-based attacks. First and the most important question that arises when we talk about snort is what is snort and why we need it/ what it is used for. Basically, we can say its a system that sits between our network and workstations and detects/prevent attacks and activities based on a set of rules. 
 
 ###### What is snort ?
