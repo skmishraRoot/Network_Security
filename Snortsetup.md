@@ -27,7 +27,7 @@ There are currently 2 versions of snort available.
 * Snort 2.X - De facto version of snort
 * snort 3.0  - Latest version of snort that features improved efficiency, performance, scalability and usablility over snort 2.
 
-For this documentation we will setup snort 2.x because its easy to understand and setup for beginners and then you can try setting up snort3 by own.
+For this documentation we will setup snort 2.x as IDS because its easy to understand and setup for beginners and then you can try setting up snort3 by own.
 
 #### Installing Snort 2.X
 In linux system/ Server you can installing snort is easy.
@@ -37,14 +37,31 @@ In linux system/ Server you can installing snort is easy.
 
 While installing snort it will ask for your ip range. You can check your ip using `ip a` you can find your IP range in the result and you need to put that range like ` xx.xx.xx.0/24` first three position of the IP and in the end you need add your cider notation.
 
-Now we have snort installed on our system. Snort comes with many predefined rules by community which is good to go for beginners. Let's run our snort now.
+We have snort installed on our system you can check at `/etc/` directory to verify or `snort --verion`. Snort comes with many predefined rules by community which is good to go for beginners. Let's run our snort now.
+
+
+#### Tweaking configuration files
+Now open snort.conf file. Scroll and change `HOME NET  any` to `HOME NET your-ip-range` and save now our snort is ready to run with predefined rules.
 
 #### Starting Snort
-
 First let's check snort manual to learn more about its options and other interseting arguments.
 
 	man snort
 type this command and checkout the results for interesting arguments.
-For this documentation we are focusing on setting up snort as IDS.
 
+We have some important argument to run snort for now and about other arguments you can explore them by own its great to do.
 
+`-A` output mode of our snort
+
+`-q` for quite mode
+
+`-i` to define network interface
+
+`-c` to define configuration file
+
+`-l` to log directory
+
+Let run our snort now.
+	
+	sudo snort -A full -l /var/log/snort -i {your network interface name} -q -c /etc/snort/snort.conf
+If this command run without any error then you have your snort working as an IDS on the specific network range.
