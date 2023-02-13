@@ -30,7 +30,6 @@ While installing snort it will ask for your ip range. You can check your ip usin
 
 We have snort installed on our system you can check at `/etc/` directory to verify or `snort --verion`. Snort comes with many predefined rules by community which is good to go for beginners. Let's run our snort now.
 
-
 ### Tweaking configuration files
 Now open snort.conf file. Scroll and change `HOME NET  any` to `HOME NET your-ip-range` and save now our snort is ready to run with predefined rules.
 
@@ -58,4 +57,8 @@ Run this command to activate snort.
 If this command run without any error then you have your snort working as an IDS on the specific network range.
 
 
+
+For more info about rules you can got to the rules download file and read [Rules](https://www.snort.org/downloads) for better info about them.
 *Now you can explore snort different features and like tweaking rules and more*
+
+
