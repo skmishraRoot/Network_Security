@@ -42,3 +42,9 @@ Now we have snort installed on our system. Snort comes with many predefined rule
 #### Starting Snort
 
 First let's check snort manual to learn more about its options and other interseting arguments.
+
+	man snort
+type this command and checkout the results for interesting comments.
+For this documentation we are focusing on setting up snort as IDS.
+
+
