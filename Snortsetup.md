@@ -56,3 +56,6 @@ Let run our snort now.
 	
 	sudo snort -A full -l /var/log/snort -i {your network interface name} -q -c /etc/snort/snort.conf
 If this command run without any error then you have your snort working as an IDS on the specific network range.
+
+
+*Now you can explore snort different features and like tweaking rules and more*
