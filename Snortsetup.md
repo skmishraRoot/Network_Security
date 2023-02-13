@@ -22,14 +22,14 @@ Now we Know what is snort lets talk about how it works.
 Snort detect malicious traffic or attacks by leveraging pattern matching. When active, Snort captuer packets, reassembles them, analyze them and determines what needs to be done to the packet based on predefined rules. What is that predefined rules ? Snort rules are very similar to typical firewall rules, whereby, they are used to match network activity against specific patters or signatures and consequently make a decision as to whether to send a alert or drop the traffic (in the case of IPS).
 Snort has a large amount or rules-sets created by the community that are very useful to begin with.
 
-###### Snort versions
+#### Snort versions
 There are currently 2 versions of snort available.
 * Snort 2.X - De facto version of snort
 * snort 3.0  - Latest version of snort that features improved efficiency, performance, scalability and usablility over snort 2.
 
 For this documentation we will setup snort 2.x as IDS because its easy to understand and setup for beginners and then you can try setting up snort3 by own.
 
-#### Installing Snort 2.X
+### Installing Snort 2.X
 In linux system/ Server you can installing snort is easy.
 
 	sudo apt-get update && sudo apt upgrade -y
@@ -40,10 +40,10 @@ While installing snort it will ask for your ip range. You can check your ip usin
 We have snort installed on our system you can check at `/etc/` directory to verify or `snort --verion`. Snort comes with many predefined rules by community which is good to go for beginners. Let's run our snort now.
 
 
-#### Tweaking configuration files
+### Tweaking configuration files
 Now open snort.conf file. Scroll and change `HOME NET  any` to `HOME NET your-ip-range` and save now our snort is ready to run with predefined rules.
 
-#### Starting Snort
+### Starting Snort
 First let's check snort manual to learn more about its options and other interseting arguments.
 
 	man snort
