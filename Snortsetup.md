@@ -35,4 +35,10 @@ In linux system/ Server you can installing snort is easy.
 	sudo apt-get update && sudo apt upgrade -y
 	sudo apt-get install snort
 
-Now we have snort installed on our system. Let's configure it to our with our system/network.
+While installing snort it will ask for your ip range. You can check your ip using `ip a` you can find your IP range in the result and you need to put that range like ` xx.xx.xx.0/24` first three position of the IP and in the end you need add your cider notation.
+
+Now we have snort installed on our system. Snort comes with many predefined rules by community which is good to go for beginners. Let's run our snort now.
+
+#### Starting Snort
+
+First let's check snort manual to learn more about its options and other interseting arguments.
